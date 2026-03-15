@@ -3,36 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinod Lakmal | Systems Administrator Portfolio</title>
+    <title>Vinod Lakmal | Systems Administrator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { scroll-behavior: smooth; overflow-y: auto !important; }
         .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-xl font-bold text-blue-700 uppercase tracking-tighter">Vinod Lakmal</span>
-            <div class="hidden md:flex space-x-8 font-medium text-sm">
+            <div class="hidden md:flex space-x-6 font-semibold text-sm">
                 <a href="#home" class="hover:text-blue-600 transition">Home</a>
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#services" class="hover:text-blue-600 transition">Skills</a>
                 <a href="#merkei" class="hover:text-blue-600 transition">Merkei Solutions</a>
-                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-md">Contact</a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero-gradient min-h-screen flex items-center pt-20">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div class="text-white">
-                <span class="inline-block px-4 py-1 bg-blue-400/30 rounded-full text-sm font-semibold mb-4 border border-blue-300/30 tracking-wide">Available for Projects & Career</span>
-                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">Empowering IT <span class="text-blue-200">Infrastructure</span></h1>
-                <p class="text-lg text-blue-100 mb-8 max-w-lg">Certified Systems Administrator with expertise in Cloud, Security, and Enterprise Operations. Founder of Merkei Solutions.</p>
-                <div class="flex gap-4">
-                    <a href="#contact" class="bg-white text-blue-700 px-8 py
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-24 pb-12">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full">
+            <div class="text-white text-center md:text-left">
+                <span class="inline-block px-4 py-1 bg-blue-400/30 rounded-full text-xs font-bold mb-6 border border-blue-300/30 uppercase tracking-widest">Available for Projects & Career</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">Expert IT <br><span class="text-blue-200">Infrastructure</span></h1>
+                <p class="text-lg text-blue-100 mb-8 max-w-lg mx-auto md:mx-0 font-light italic">Certified Systems Administrator specialized in Azure, Google Cloud, and Secure Enterprise Operations.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold shadow-xl hover:bg-blue-50 transition">Hire Me</a>
+                    <a href="#merkei" class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition text-center">My Solutions</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-400 blur-3xl opacity-30"></div>
+                    <img src="profile.jpg" alt="Vinod Lakmal" class="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl border-8 border-white/20 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-blue-900">About Me</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                With a Diploma in Networking and Security, I have built a career around securing business environments. Certified as a Google Associate Engineer and Azure Fundamentals specialist.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 text-blue-700 font-bold">
+                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 italic">Azure Specialist</div>
+                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 italic">GCP Engineer</div>
+                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 italic">Linux Admin</div>
+                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 italic">Network Security</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 italic">Technical Expertise</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <i class="fa-solid fa-cloud text-blue-600 text-4xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Cloud Solutions</h3>
+                    <p class="text-slate-500 text-sm">Managing Azure, Google Cloud, and DigitalOcean instances.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <i class="fa-solid fa-shield-halved text-blue-600 text-4xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Cybersecurity</h3>
+                    <p class="text-slate-500 text-sm">Firewall, SSL, and enterprise data protection.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <i class="fa-solid fa-network-wired text-blue-600 text-4xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Networking</h3>
+                    <p class="text-slate-500 text-sm">Secure office networks and fingerprint access systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="merkei" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-blue-900 rounded-[3rem] p-12 text-white shadow-2xl">
+                <h2 class="text-4xl font-bold mb-6 italic">Merkei Solutions</h2>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div>
+                        <h4 class="text-blue-400 font-bold mb-4 uppercase tracking-widest text-xs">Monitoring</h4>
+                        <ul class="space-y-2 opacity-90 text-sm font-light italic">
+                            <li>- Live Monitoring</li>
+                            <li>- Asset Management</li>
+                            <li>- Full Device Audit</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-blue-400 font-bold mb-4 uppercase tracking-widest text-xs">Infrastructure</h4>
+                        <ul class="space-y-2 opacity-90 text-sm font-light italic">
+                            <li>- SMS Gateways (Jasmin)</li>
+                            <li>- Call Centers (PBX)</li>
+                            <li>- HRMS Software</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-blue-400 font-bold mb-4 uppercase tracking-widest text-xs">Hardware</h4>
+                        <ul class="space-y-2 opacity-90 text-sm font-light italic">
+                            <li>- CCTV Installation</li>
+                            <li>- Fingerprint Access</li>
+                            <li>- Biometric Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-50 text-center">
+        <div class="max-w-xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-8 italic">Let's Connect</h2>
+            <div class="bg-white p-10 rounded-3xl shadow-xl border border-slate-100">
+                <a href="mailto:vinod.lakmal@gmail.com" class="text-2xl font-bold text-blue-600 hover:underline break-all">
+                    vinod.lakmal@gmail.com
+                </a>
+            </div>
+            <p class="mt-20 text-slate-400 text-xs tracking-widest uppercase">&copy; 2026 Vinod Lakmal. All Rights Reserved.</p>
+        </div>
+    </section>
+
+</body>
+</html>
